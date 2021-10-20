@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/actclientes.js"></script>
+    <script src="./js/eliminarcre.js"></script>
+    
+    <link rel="stylesheet" href="/css/clientes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title> CLIENTES </title>
+
+<body>
+	<!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Web <span>Bigner</span></div>
+                <div class="sidebar-btn">
+                    
+                </div>
+                <ul>
+                    <li><a href="/vistaempleado"><i class="fas fa-search"></i></a></li>
+                    <li><a href="/vistacliente"><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+
+        <!--sidebar end-->
+        <!--main container start-->
+        
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".sidebar-btn").click(function(){
+            $(".wrapper").toggleClass("collapse");
+        });
+    });
+    </script>
+    <section class="form-registerr">
+        <a></a>
+        <form action="/frminsertarcliente " method="POST">
+            <div><input  id=""   type="text" required   name="doccli"  class="controls" placeholder="DOCUMENTO"></div>
+            <div><input  id=""   type="text" required   name="nomcli"  class="controls" placeholder="NOMBRE"></div>
+            <div><input  id=""   type="text" required   name="apecli"  class="controls" placeholder="APELLIDO"></div>
+            <div><input  id=""   type="text" required   name="correocli"  class="controls" placeholder="CORREO"></div>
+            <div><input  id=""   type="text" required   name="celular"  class="controls" placeholder="CELULAR"></div>
+            <div><input  id=""   type="text" required   name="sexo"  class="controls" placeholder="SEXO"></div>
+            <div><input  id=""   type="text" required   name="fechanaccli"  class="controls" placeholder="FECHA NACIMIENTO"></div>
+            <td><input  type="submit"  value="INGRESAR" name="btnact" id="btnact"   class="botons" class="controls"     ></td>
+</form>
+</section>
+    <thead> 
+    <div id="titulo">
+        <section class="form-register">
+            <form action="" none="frm" id="frm">
+    <table id="tabla" >	
+            <tr>
+            <td> DOCUMENTO </td>
+            <td> NOMBRE  </td>
+            <td> APELLIDO </td>
+            <td> CORREO</td>
+            <td> CELULAR</td>
+            <td> SEXO</td>
+            <td> FECHA NACIMIENTO</td>
+            <td> ELIMINAR</td>
+    
+<tbody>
+    <% datos.forEach(function(datos) { %>
+
+<tr></tr>
+    <td><input   type="text"  value="<%=datos.doccli%>"         id="cli"       class="cli"  ></td>
+    <td><input   type="text"  value="<%=datos.nomcli%>"         id="nommcli"   class="nommcli"  ></td>
+    <td><input   type="text"  value="<%=datos.apecli%>"         id="ape"       class="ape"  ></td>
+    <td><input   type="text"  value="<%=datos.correocli%>"      id="correo"    class="correo"  ></td>
+    <td><input   type="text"  value="<%=datos.celular%>"        id="cel"       class="cel"  ></td>
+    <td><input   type="text"  value="<%=datos.sexo%>"           id="gen"       class="gen"  ></td>
+    <td><input   type="text"  value="<%=datos.fechanaccli%>"    id="fec"       class="fec"  ></td>
+  
+
+  
+
+    <td><input  type="submit"  value="actualizar" name="btnact" id="btnact"   class="btnact"    class="form-control"  ></td>
+    <td><input  type="submit"  value="eliminar "  name="btnelit" id="btnelit"   class="btnelit"    class="form-control" ></td>
+<%})%> 
+</tbody>
+
+</table>
+</section>
+
+</head>
+</form>    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+   
+    <link rel="stylesheet" href="/css/cuentas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title> CREDITOS </title>
+
+<body>
+	<!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Web <span>Bigner</span></div>
+                <div class="sidebar-btn">
+                    
+                </div>
+                <ul>
+                    <li><a href="/vistaempleado"><i class="fas fa-search"></i></a></li>
+                    <li><a href="/vistacliente"><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+ 
+        <!--sidebar end-->
+        <!--main container start-->
+        
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".sidebar-btn").click(function(){
+            $(".wrapper").toggleClass("collapse");
+        });
+    });
+    </script>
+
+</form>
+</section>
+
+
+<section class="form-registerr">
+    <a></a>
+    <form action="/frminsertarcuenta " method="POST">
+        <div><input  id=""   type="text" required   name="codigo"  class="controls" placeholder="CODIGO "></div>
+        <div><input  id=""   type="text" required   name="doccli"  class="controls" placeholder="DOCUMENTO "></div>
+        <div><input  id=""   type="text" required   name="tipcred"  class="controls" placeholder="T. CREDITO"></div>
+        <div><input  id=""   type="text" required   name="saldo"  class="controls" placeholder="SALDO"></div>
+
+     
+        <td><input  type="submit"  value="INGRESAR" name="btnact" id="btnact"   class="botons" class="controls"     ></td>
+</form>
+</section>
+<thead> 
+<div id="titulo">
+    <section class="form-register">
+        <form action="" none="frm" id="frm">
+<table id="tabla" >	
+        <tr>
+        <td> CODIGO  </td>
+        <td> DOCUMENTO  </td>
+        <td> T.CREDITO </td>
+        <td> SALDO</td>
+
+        <td> ACTUALIZAR</td>
+        <td> ELIMINAR</td>
+
+<tbody>
+<% datos.forEach(function(datos) { %>
+
+<tr></tr>
+<td><input   type="text"  value="<%=datos.codigo%>"         id="docc"       class="docc"  ></td>
+<td><input   type="text"  value="<%=datos.doccli%>"         id="nomm"       class="nomm"  ></td>
+<td><input   type="text"  value="<%=datos.tipcred%>"         id="ve"       class="ve"  ></td>
+<td><input   type="text"  value="<%=datos.saldo%>"          id="rl"       class="rl"  ></td>
+
+
+<td><input  type="submit"  value="actualizar" name="btnact" id="btnact"   class="btnact"    class="form-control"  ></td>
+<td><input  type="submit"  value="eliminar "  name="btnelit" id="btnelit"   class="btnelit"    class="form-control" ></td>
+<%})%> 
+</tbody>
+
+</table>
+</section>
+
+</head>
+</form>    
+</body>
+</html>

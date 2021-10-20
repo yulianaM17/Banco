@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/actlineas.js"></script>
+    <link rel="stylesheet" href="/css/lineascli.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title> LINEAS </title>
+
+<body>
+	<!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Web <span>Bigner</span></div>
+                <div class="sidebar-btn">
+                   
+                </div>
+                <ul>
+                    <li><a href="/vistamicuenta"><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+ 
+        <!--sidebar end-->
+        <!--main container start-->
+        
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".sidebar-btn").click(function(){
+            $(".wrapper").toggleClass("collapse");
+        });
+    });
+    </script>
+
+
+    
+
+<form action="" none="frm" id="frm">
+    <thead> 
+
+    <div id="titulo">
+
+
+ 
+        <thead> 
+        <div id="titulo">
+            <section class="form-register">
+                <form action="" none="frm" id="frm">
+        <table id="tabla" >	
+                <tr>
+                <td> CODIGO LINEA </td>
+                <td> NOMBRE LINEA  </td>
+                <td> MONTO CREDITO </td>
+                <td> PLAZO CREDITO</td>
+
+        
+    <tbody>
+        <% datos.forEach(function(datos) { %>
+    
+    <tr></tr>
+        <td><input   type="text"  value="<%=datos.codlinea%>"         id="docli"       class="docli"  ></td>
+        <td><input   type="text"  value="<%=datos.nomlinea%>"         id="nommclii"       class="nommclii"  ></td>
+        <td><input   type="text"  value="<%=datos.montomaxicredito%>"         id="vee"       class="vee"  ></td>
+        <td><input   type="text"  value="<%=datos.plazomaxcred%>"          id="rll"       class="rll"  ></td>
+       
+    <%})%> 
+    </tbody>
+    
+    </table>
+    </section>
+    
+    </head>
+    </form>    
+    </body>
+    </html>
